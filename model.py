@@ -120,14 +120,14 @@ augmented_images = augmented_images + reverse_images
 augmented_measurements = augmented_measurements + reverse_measurements
 
 print('Create numpy arrays.. ' + str(len(augmented_images)))
-#X_train = np.array(augmented_images)
-#y_train = np.array(augmented_measurements)
+X_train = np.array(augmented_images)
+y_train = np.array(augmented_measurements)
 
 print('Shuffle..')
-#X_train, y_train = shuffle(X_train, y_train)
+X_train, y_train = shuffle(X_train, y_train)
 
 print('Training started..')
-#salih_Lenet(X_train, y_train)
+salih_Lenet(X_train, y_train)
 
 
             
