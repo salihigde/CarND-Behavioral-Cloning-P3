@@ -105,15 +105,12 @@ def salih_Lenet(X_train, y_train):
 
 print('Read images...')
 images, measurements = readImages('./model_data')
-print(len(images))
 
 print('Data augmentation..')
 augmented_images, augmented_measurements = data_augmentation(images, measurements)
-print(len(augmented_images))
 
 print('Reverse drive images..')
 reverse_images, reverse_measurements = readImages('./model_data_reverse')
-print(len(reverse_images))
 
 print('Add both image data..')
 augmented_images = augmented_images + reverse_images
@@ -128,8 +125,3 @@ X_train, y_train = shuffle(X_train, y_train)
 
 print('Training started..')
 salih_Lenet(X_train, y_train)
-
-
-            
-            
-    
